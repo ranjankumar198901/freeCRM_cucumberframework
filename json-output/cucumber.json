@@ -1,172 +1,93 @@
 [
   {
-    "line": 1,
+    "comments": [
+      {
+        "line": 1,
+        "value": "#@tag"
+      }
+    ],
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Free CRM Create a new deal scenario",
+        "comments": [
+          {
+            "line": 4,
+            "value": "# @tag1"
+          }
+        ],
+        "line": 5,
+        "name": "validate Free CRM home page Test",
         "description": "",
-        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+        "id": "free-feature-application-test---i-want-to-use-this-template-for-my-feature-file;validate-free-crm-home-page-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 20699875727,
+              "duration": 34975909762,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user is already in login page",
+            "line": 6,
+            "name": "User opens browserThen",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_is_already_in_login_page()"
+              "location": "HomePageSteps.user_opens_browserThen()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 15393241,
+              "duration": 169649016,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Title of the login page is free CRM",
+            "line": 7,
+            "name": "user is on login page",
             "match": {
-              "location": "DealsStepWithMapDefinition.title_of_the_login_page_is_free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1779103409,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enter username and password",
-            "match": {
-              "location": "DealsStepWithMapDefinition.user_enter_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "Ranjankumar03@gmail.com",
-                  "Abcdef@123"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5153636336,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click on login Button",
-            "match": {
-              "location": "DealsStepWithMapDefinition.user_click_on_login_Button()"
+              "location": "HomePageSteps.user_is_on_login_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 58920923,
-              "status": "passed"
+              "duration": 899762,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat com.qa.page.Loginpage.login(Loginpage.java:44)\r\n\tat com.qa.StepDefination.HomePageSteps.user_logs_into_app(HomePageSteps.java:36)\r\n\tat ✽.Then user logs into app(D:/cucumber/freeCRM_cucumberframework/src/main/java/com/qa/feature/freeCRM.feature:8)\r\n",
+              "status": "failed"
             },
-            "line": 10,
-            "name": "user is on home page",
+            "line": 8,
+            "name": "user logs into app",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
+              "location": "HomePageSteps.user_logs_into_app()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5720844621,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
-            "name": "user moves to new deal page",
+            "name": "validate home page title",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_moves_to_new_deal_page()"
+              "location": "HomePageSteps.validate_home_page_title()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 34442647098,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
-            "name": "user enters deal details",
+            "name": "validate logedin username",
             "match": {
-              "location": "DealsStepWithMapDefinition.user_enters_deal_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "title",
-                  "amount",
-                  "probability",
-                  "commission"
-                ],
-                "line": 13
-              },
-              {
-                "cells": [
-                  "test deal1",
-                  "1000",
-                  "50",
-                  "10"
-                ],
-                "line": 14
-              },
-              {
-                "cells": [
-                  "test deal2",
-                  "2000",
-                  "60",
-                  "20"
-                ],
-                "line": 15
-              },
-              {
-                "cells": [
-                  "test deal3",
-                  "3000",
-                  "70",
-                  "30"
-                ],
-                "line": 16
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7478205712,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "logout of application",
-            "match": {
-              "location": "DealsStepWithMapDefinition.logout_of_application()"
+              "location": "HomePageSteps.validate_logedin_username()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Deal data creation",
+    "name": "Free Feature Application test   I want to use this template for my feature file",
     "description": "",
-    "id": "deal-data-creation",
+    "id": "free-feature-application-test---i-want-to-use-this-template-for-my-feature-file",
     "keyword": "Feature",
-    "uri": "D:/cucumber/freeCRM_cucumberframework/src/main/java/Feature/dealsmap.feature"
+    "uri": "D:/cucumber/freeCRM_cucumberframework/src/main/java/com/qa/feature/freeCRM.feature"
   }
 ]

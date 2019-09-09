@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="75.348627">
-<testcase classname="Deal data creation" name="Free CRM Create a new deal scenario" time="75.348627">
-<system-out><![CDATA[Given user is already in login page.........................................passed
-When Title of the login page is free CRM....................................passed
-Then user enter username and password.......................................passed
-Then user click on login Button.............................................passed
-Then user is on home page...................................................passed
-Then user moves to new deal page............................................passed
-Then user enters deal details...............................................passed
-Then logout of application..................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.146459">
+<testcase classname="Free Feature Application test   I want to use this template for my feature file" name="validate Free CRM home page Test" time="35.146459">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)&#13;&#10;&#9;at com.qa.page.Loginpage.login(Loginpage.java:44)&#13;&#10;&#9;at com.qa.StepDefination.HomePageSteps.user_logs_into_app(HomePageSteps.java:36)&#13;&#10;&#9;at ✽.Then user logs into app(D:/cucumber/freeCRM_cucumberframework/src/main/java/com/qa/feature/freeCRM.feature:8)&#13;&#10;"><![CDATA[Given User opens browserThen................................................passed
+Then user is on login page..................................................passed
+Then user logs into app.....................................................failed
+Then validate home page title...............................................skipped
+Then validate logedin username..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+	at com.qa.page.Loginpage.login(Loginpage.java:44)
+	at com.qa.StepDefination.HomePageSteps.user_logs_into_app(HomePageSteps.java:36)
+	at ✽.Then user logs into app(D:/cucumber/freeCRM_cucumberframework/src/main/java/com/qa/feature/freeCRM.feature:8)
+]]></failure>
 </testcase>
 </testsuite>
