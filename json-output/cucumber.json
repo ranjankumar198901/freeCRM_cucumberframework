@@ -1,0 +1,266 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 17,
+        "name": "Free CRN create a new contact scenario",
+        "description": "",
+        "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18019523700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is already in login page",
+            "match": {
+              "location": "stepDef.user_is_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 815063700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter \"Ranjankumar03@gmail.com\" and \"Abcdef@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ranjankumar03@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "Abcdef@123",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDef.user_enter_user_name_and_password1(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5155622500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on login Button",
+            "match": {
+              "location": "stepDef.user_click_on_login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 113084000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDef.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5825050500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user moves to new contact page",
+            "match": {
+              "location": "stepDef.user_moves_to_new_contact_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6646574000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters new contact details \"Naveen\" and \"k\" and \"tester1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Naveen",
+                  "offset": 33
+                },
+                {
+                  "val": "k",
+                  "offset": 46
+                },
+                {
+                  "val": "tester1",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDef.user_enters_new_contact_details_and_and(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5586487700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "logout of application",
+            "match": {
+              "location": "stepDef.logout_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Free CRN create a new contact scenario",
+        "description": "",
+        "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16072576700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is already in login page",
+            "match": {
+              "location": "stepDef.user_is_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 686316300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter \"Ranjankumar03@gmail.com\" and \"Abcdef@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ranjankumar03@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "Abcdef@123",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDef.user_enter_user_name_and_password1(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5159113600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on login Button",
+            "match": {
+              "location": "stepDef.user_click_on_login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 80298600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on home page",
+            "match": {
+              "location": "stepDef.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5843584300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user moves to new contact page",
+            "match": {
+              "location": "stepDef.user_moves_to_new_contact_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6573125900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters new contact details \"Ramesh\" and \"A\" and \"tester1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ramesh",
+                  "offset": 33
+                },
+                {
+                  "val": "A",
+                  "offset": 46
+                },
+                {
+                  "val": "tester1",
+                  "offset": 54
+                }
+              ],
+              "location": "stepDef.user_enters_new_contact_details_and_and(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5564227900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "logout of application",
+            "match": {
+              "location": "stepDef.logout_of_application()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Contacts",
+    "description": "",
+    "id": "free-crm-contacts",
+    "keyword": "Feature",
+    "uri": "E:/JavaSeleniumUdmey/workspace/FreeCRM/src/main/java/Feature/contacts.feature"
+  }
+]
