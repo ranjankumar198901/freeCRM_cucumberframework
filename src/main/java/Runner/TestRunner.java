@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-			features = "E:\\JavaSeleniumUdmey\\workspace\\FreeCRM\\src\\main\\java\\Feature\\contacts.feature",
+			features = "D:\\cucumber\\freeCRM_cucumberframework\\src\\main\\java\\Feature\\dealsmap.feature",
 			glue= {"stepdef"},  //tells where the step defination is available
 			format ={"pretty","html:test-output","json:json-output/cucumber.json","junit:junit_xml/cucumber.xml"},  //to generate reporting format
 			dryRun= false,  //checking the mapping is correct or not 

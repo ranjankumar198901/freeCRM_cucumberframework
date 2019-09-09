@@ -1,344 +1,167 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("E:/JavaSeleniumUdmey/workspace/FreeCRM/src/main/java/Feature/contacts.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/cucumber/freeCRM_cucumberframework/src/main/java/Feature/dealsmap.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Free CRM Contacts",
+  "line": 1,
+  "name": "Deal data creation",
   "description": "",
-  "id": "free-crm-contacts",
+  "id": "deal-data-creation",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "line": 5,
-  "name": "Free CRN create a new contact scenario",
+formatter.scenario({
+  "line": 3,
+  "name": "Free CRM Create a new deal scenario",
   "description": "",
-  "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 6,
+  "line": 4,
   "name": "user is already in login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "user enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
+  "line": 5,
+  "name": "Title of the login page is free CRM",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "user click on login Button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user moves to new contact page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters new contact details \"\u003cfirstname\u003e\" and \"\u003cLatname\u003e\" and \"\u003cposition\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "logout of application",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 15,
-  "name": "",
-  "description": "",
-  "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;",
+  "line": 6,
+  "name": "user enter username and password",
   "rows": [
     {
       "cells": [
         "username",
-        "password",
-        "firstname",
-        "Latname",
-        "position"
+        "password"
       ],
-      "line": 16,
-      "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;1"
+      "line": 7
     },
     {
       "cells": [
         "Ranjankumar03@gmail.com",
-        "Abcdef@123",
-        "Naveen",
-        "k",
-        "tester1"
+        "Abcdef@123"
       ],
-      "line": 17,
-      "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;2"
-    },
-    {
-      "cells": [
-        "Ranjankumar03@gmail.com",
-        "Abcdef@123",
-        "Ramesh",
-        "A",
-        "tester1"
-      ],
-      "line": 18,
-      "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;3"
+      "line": 8
     }
   ],
-  "keyword": "Examples"
+  "keyword": "Then "
 });
-formatter.scenario({
+formatter.step({
+  "line": 9,
+  "name": "user click on login Button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user is on home page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "user moves to new deal page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user enters deal details",
+  "rows": [
+    {
+      "cells": [
+        "title",
+        "amount",
+        "probability",
+        "commission"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "test deal1",
+        "1000",
+        "50",
+        "10"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "test deal2",
+        "2000",
+        "60",
+        "20"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "test deal3",
+        "3000",
+        "70",
+        "30"
+      ],
+      "line": 16
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
   "line": 17,
-  "name": "Free CRN create a new contact scenario",
-  "description": "",
-  "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 6,
-  "name": "user is already in login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "user enter \"Ranjankumar03@gmail.com\" and \"Abcdef@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user click on login Button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user moves to new contact page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters new contact details \"Naveen\" and \"k\" and \"tester1\"",
-  "matchedColumns": [
-    2,
-    3,
-    4
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
   "name": "logout of application",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepDef.user_is_already_in_login_page()"
+  "location": "DealsStepWithMapDefinition.user_is_already_in_login_page()"
 });
 formatter.result({
-  "duration": 18019523700,
+  "duration": 20699875727,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Ranjankumar03@gmail.com",
-      "offset": 12
-    },
-    {
-      "val": "Abcdef@123",
-      "offset": 42
-    }
-  ],
-  "location": "stepDef.user_enter_user_name_and_password1(String,String)"
+  "location": "DealsStepWithMapDefinition.title_of_the_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 815063700,
+  "duration": 15393241,
   "status": "passed"
 });
 formatter.match({
-  "location": "stepDef.user_click_on_login_Button()"
+  "location": "DealsStepWithMapDefinition.user_enter_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 5155622500,
+  "duration": 1779103409,
   "status": "passed"
 });
 formatter.match({
-  "location": "stepDef.user_is_on_home_page()"
+  "location": "DealsStepWithMapDefinition.user_click_on_login_Button()"
 });
 formatter.result({
-  "duration": 113084000,
+  "duration": 5153636336,
   "status": "passed"
 });
 formatter.match({
-  "location": "stepDef.user_moves_to_new_contact_page()"
+  "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 5825050500,
+  "duration": 58920923,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Naveen",
-      "offset": 33
-    },
-    {
-      "val": "k",
-      "offset": 46
-    },
-    {
-      "val": "tester1",
-      "offset": 54
-    }
-  ],
-  "location": "stepDef.user_enters_new_contact_details_and_and(String,String,String)"
+  "location": "DealsStepWithMapDefinition.user_moves_to_new_deal_page()"
 });
 formatter.result({
-  "duration": 6646574000,
+  "duration": 5720844621,
   "status": "passed"
 });
 formatter.match({
-  "location": "stepDef.logout_of_application()"
+  "location": "DealsStepWithMapDefinition.user_enters_deal_details(DataTable)"
 });
 formatter.result({
-  "duration": 5586487700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 18,
-  "name": "Free CRN create a new contact scenario",
-  "description": "",
-  "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 6,
-  "name": "user is already in login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "user enter \"Ranjankumar03@gmail.com\" and \"Abcdef@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user click on login Button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user moves to new contact page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters new contact details \"Ramesh\" and \"A\" and \"tester1\"",
-  "matchedColumns": [
-    2,
-    3,
-    4
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "logout of application",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepDef.user_is_already_in_login_page()"
-});
-formatter.result({
-  "duration": 16072576700,
+  "duration": 34442647098,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Ranjankumar03@gmail.com",
-      "offset": 12
-    },
-    {
-      "val": "Abcdef@123",
-      "offset": 42
-    }
-  ],
-  "location": "stepDef.user_enter_user_name_and_password1(String,String)"
+  "location": "DealsStepWithMapDefinition.logout_of_application()"
 });
 formatter.result({
-  "duration": 686316300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "stepDef.user_click_on_login_Button()"
-});
-formatter.result({
-  "duration": 5159113600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "stepDef.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 80298600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "stepDef.user_moves_to_new_contact_page()"
-});
-formatter.result({
-  "duration": 5843584300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Ramesh",
-      "offset": 33
-    },
-    {
-      "val": "A",
-      "offset": 46
-    },
-    {
-      "val": "tester1",
-      "offset": 54
-    }
-  ],
-  "location": "stepDef.user_enters_new_contact_details_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 6573125900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "stepDef.logout_of_application()"
-});
-formatter.result({
-  "duration": 5564227900,
+  "duration": 7478205712,
   "status": "passed"
 });
 });

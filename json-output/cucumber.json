@@ -1,266 +1,172 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 17,
-        "name": "Free CRN create a new contact scenario",
+        "line": 3,
+        "name": "Free CRM Create a new deal scenario",
         "description": "",
-        "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;2",
+        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 18019523700,
+              "duration": 20699875727,
               "status": "passed"
             },
-            "line": 6,
+            "line": 4,
             "name": "user is already in login page",
             "match": {
-              "location": "stepDef.user_is_already_in_login_page()"
+              "location": "DealsStepWithMapDefinition.user_is_already_in_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 815063700,
+              "duration": 15393241,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enter \"Ranjankumar03@gmail.com\" and \"Abcdef@123\"",
+            "line": 5,
+            "name": "Title of the login page is free CRM",
             "match": {
-              "arguments": [
-                {
-                  "val": "Ranjankumar03@gmail.com",
-                  "offset": 12
-                },
-                {
-                  "val": "Abcdef@123",
-                  "offset": 42
-                }
-              ],
-              "location": "stepDef.user_enter_user_name_and_password1(String,String)"
+              "location": "DealsStepWithMapDefinition.title_of_the_login_page_is_free_CRM()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 5155622500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click on login Button",
-            "match": {
-              "location": "stepDef.user_click_on_login_Button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 113084000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user is on home page",
-            "match": {
-              "location": "stepDef.user_is_on_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5825050500,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user moves to new contact page",
-            "match": {
-              "location": "stepDef.user_moves_to_new_contact_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6646574000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user enters new contact details \"Naveen\" and \"k\" and \"tester1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Naveen",
-                  "offset": 33
-                },
-                {
-                  "val": "k",
-                  "offset": 46
-                },
-                {
-                  "val": "tester1",
-                  "offset": 54
-                }
-              ],
-              "location": "stepDef.user_enters_new_contact_details_and_and(String,String,String)"
-            },
-            "matchedColumns": [
-              2,
-              3,
-              4
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5586487700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "logout of application",
-            "match": {
-              "location": "stepDef.logout_of_application()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 18,
-        "name": "Free CRN create a new contact scenario",
-        "description": "",
-        "id": "free-crm-contacts;free-crn-create-a-new-contact-scenario;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 16072576700,
+              "duration": 1779103409,
               "status": "passed"
             },
             "line": 6,
-            "name": "user is already in login page",
+            "name": "user enter username and password",
             "match": {
-              "location": "stepDef.user_is_already_in_login_page()"
+              "location": "DealsStepWithMapDefinition.user_enter_username_and_password(DataTable)"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 686316300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user enter \"Ranjankumar03@gmail.com\" and \"Abcdef@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Ranjankumar03@gmail.com",
-                  "offset": 12
-                },
-                {
-                  "val": "Abcdef@123",
-                  "offset": 42
-                }
-              ],
-              "location": "stepDef.user_enter_user_name_and_password1(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "Ranjankumar03@gmail.com",
+                  "Abcdef@123"
+                ],
+                "line": 8
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5159113600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click on login Button",
-            "match": {
-              "location": "stepDef.user_click_on_login_Button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 80298600,
+              "duration": 5153636336,
               "status": "passed"
             },
             "line": 9,
-            "name": "user is on home page",
+            "name": "user click on login Button",
             "match": {
-              "location": "stepDef.user_is_on_home_page()"
+              "location": "DealsStepWithMapDefinition.user_click_on_login_Button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5843584300,
+              "duration": 58920923,
               "status": "passed"
             },
             "line": 10,
-            "name": "user moves to new contact page",
+            "name": "user is on home page",
             "match": {
-              "location": "stepDef.user_moves_to_new_contact_page()"
+              "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6573125900,
+              "duration": 5720844621,
               "status": "passed"
             },
             "line": 11,
-            "name": "user enters new contact details \"Ramesh\" and \"A\" and \"tester1\"",
+            "name": "user moves to new deal page",
             "match": {
-              "arguments": [
-                {
-                  "val": "Ramesh",
-                  "offset": 33
-                },
-                {
-                  "val": "A",
-                  "offset": 46
-                },
-                {
-                  "val": "tester1",
-                  "offset": 54
-                }
-              ],
-              "location": "stepDef.user_enters_new_contact_details_and_and(String,String,String)"
+              "location": "DealsStepWithMapDefinition.user_moves_to_new_deal_page()"
             },
-            "matchedColumns": [
-              2,
-              3,
-              4
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34442647098,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters deal details",
+            "match": {
+              "location": "DealsStepWithMapDefinition.user_enters_deal_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "amount",
+                  "probability",
+                  "commission"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "test deal1",
+                  "1000",
+                  "50",
+                  "10"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "test deal2",
+                  "2000",
+                  "60",
+                  "20"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "test deal3",
+                  "3000",
+                  "70",
+                  "30"
+                ],
+                "line": 16
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5564227900,
+              "duration": 7478205712,
               "status": "passed"
             },
-            "line": 12,
+            "line": 17,
             "name": "logout of application",
             "match": {
-              "location": "stepDef.logout_of_application()"
+              "location": "DealsStepWithMapDefinition.logout_of_application()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Free CRM Contacts",
+    "name": "Deal data creation",
     "description": "",
-    "id": "free-crm-contacts",
+    "id": "deal-data-creation",
     "keyword": "Feature",
-    "uri": "E:/JavaSeleniumUdmey/workspace/FreeCRM/src/main/java/Feature/contacts.feature"
+    "uri": "D:/cucumber/freeCRM_cucumberframework/src/main/java/Feature/dealsmap.feature"
   }
 ]
